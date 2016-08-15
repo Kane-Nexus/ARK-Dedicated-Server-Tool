@@ -86,6 +86,7 @@
 
     <!-- Workshop Files Window -->
     <sys:String x:Key="WorkshopFiles_Title">Workshop Details</sys:String>
+    <sys:String x:Key="WorkshopFiles_ProfileTitle">Workshop Details - {0}</sys:String>
     <sys:String x:Key="WorkshopFiles_Load_FailedTitle">Load Workshop Items Error</sys:String>
     <sys:String x:Key="WorkshopFiles_Refresh_FailedTitle">Refresh Workshop Items Error</sys:String>
 
@@ -353,6 +354,8 @@
     <sys:String x:Key="ServerSettings_Save_ServerCache_ErrorTitle">Server cache not configured</sys:String>
     <sys:String x:Key="ServerSettings_Save_ServerCache_ErrorLabel1">Auto-updates is enabled but the Server Cache update is not yet configured. The server cache downloads server updates in the background automatically to enable faster server updates, particularly when there are multiple servers. You must first configure the cache, then you may enable automatic updating. Would you like to configure the cache now?</sys:String>
     <sys:String x:Key="ServerSettings_Save_ServerCache_ErrorLabel2">The server cache was not configured. Disabling auto-updates.</sys:String>
+    <sys:String x:Key="ServerSettings_Save_AutoRestart_SotF_ErrorTitle">SotF Not Compatible</sys:String>
+    <sys:String x:Key="ServerSettings_Save_AutoRestart_SotF_ErrorLabel">Auto-restarts are enabled but is not compatible with SotF. Disabling auto-restarts.</sys:String>
     <sys:String x:Key="ServerSettings_Save_AutoUpdate_SotF_ErrorTitle">SotF Not Compatible</sys:String>
     <sys:String x:Key="ServerSettings_Save_AutoUpdate_SotF_ErrorLabel">Auto-updates are enabled but is not compatible with SotF. Disabling auto-updates.</sys:String>
     <sys:String x:Key="ServerSettings_Save_AutoUpdate_AutoManagedMods_ErrorTitle">Auto Managed Mods Not Compatible</sys:String>
@@ -436,8 +439,6 @@
     <sys:String x:Key="ServerSettings_ModIdsTooltip">A comma-separated list of mod ids, in the order in which they should be applied.</sys:String>
     <sys:String x:Key="ServerSettings_ModDetailsTooltip">View the mod details.</sys:String>
     <sys:String x:Key="ServerSettings_ModUpgradeTooltip">Upgrade to the latest version of the mods that is currently available to download.</sys:String>
-    <sys:String x:Key="ServerSettings_UpgradeMods_FailedTitle">Mods Update Error</sys:String>
-    <sys:String x:Key="ServerSettings_UpgradeMods_MutexFailedLabel">Could not lock the server, another process is using the server. Mod update process was cancelled.</sys:String>
 
     <sys:String x:Key="ServerSettings_EnableExtinctionEventLabel">Enable Extinction Event</sys:String>
     <sys:String x:Key="ServerSettings_EnableExtinctionEventTooltip">If enabled, the extinction countdown will be turned on. To reset the countdown, disable, save the profile and then enable.</sys:String>
@@ -851,15 +852,21 @@
     <sys:String x:Key="ServerSettings_AllowUnalignedDinosOnFlyerPlatformLabel">Allow Unaligned Dinos on Flyer Platform</sys:String>
     <sys:String x:Key="ServerSettings_AllowUnalignedDinosOnFlyerPlatformTooltip">If enabled, non-allied dinos are able to stand on the Quetal platforms.</sys:String>
 
-    <sys:String x:Key="ServerSettings_EnableStructureDecayLabel">Enable Structure Decay PvE</sys:String>
-    <sys:String x:Key="ServerSettings_EnableStructureDecayTooltip">If enabled, enables decay of player structures in PvE.</sys:String>
+    <sys:String x:Key="ServerSettings_EnableStructureDecayPvELabel">Enable Structure Decay PvE</sys:String>
+    <sys:String x:Key="ServerSettings_EnableStructureDecayPvETooltip">If enabled, enables decay of player structures in PvE.</sys:String>
     <sys:String x:Key="ServerSettings_StructureDecayPeriodLabel">Structure Decay Period:</sys:String>
     <sys:String x:Key="ServerSettings_StructureDecayPeriodTooltip">Specifies the time required for player structures to decay in PvE mode.</sys:String>
     <sys:String x:Key="ServerSettings_StructureDecayMultiplierLabel">Structure Decay Multiplier:</sys:String>
     <sys:String x:Key="ServerSettings_StructureDecayMultiplierTooltip">Specifies the scaling factor for the decay rate of player structures in PvE mode.</sys:String>
 
+    <sys:String x:Key="ServerSettings_EnableAutoDestroyStructuresLabel">Auto Destroy Structures</sys:String>
+    <sys:String x:Key="ServerSettings_EnableAutoDestroyStructuresTooltip">If enabled, will auto destroy structures once the demolish timer expires.</sys:String>
     <sys:String x:Key="ServerSettings_AutoDestroyOldStructuresLabel">Auto Destroy Old Structures Multiplier:</sys:String>
     <sys:String x:Key="ServerSettings_AutoDestroyOldStructuresTooltip">Allows Auto-Destroying Structures after sufficient 'no nearby Tribe' time has passed. Useful for servers to clear off abandoned structures automatically over time if they wish. Set to 0 to disable it.</sys:String>
+    <sys:String x:Key="ServerSettings_OnlyDecayUnsnappedCoreStructuresLabel">Only Decay Unsnapped Core Structures</sys:String>
+    <sys:String x:Key="ServerSettings_OnlyDecayUnsnappedCoreStructuresTooltip">If enabled, only unsnapped core structures will decay. Useful for eliminating lone pillar/foundation spam on servers.</sys:String>
+    <sys:String x:Key="ServerSettings_FastDecayUnsnappedCoreStructuresLabel">Fast Decay Unsnapped Core Structures</sys:String>
+    <sys:String x:Key="ServerSettings_FastDecayUnsnappedCoreStructuresTooltip">If enabled, will decay unsnapped foundations/pillars at faster speed.</sys:String>
     <sys:String x:Key="ServerSettings_ForceAllStructureLockingLabel">Force All Structure Locking</sys:String>
     <sys:String x:Key="ServerSettings_ForceAllStructureLockingTooltip">If enabled, allow Locking all item containers.</sys:String>
     <sys:String x:Key="ServerSettings_PassiveDefensesDamageDinosLabel">Passive Defenses Damage Riderless Dinos</sys:String>

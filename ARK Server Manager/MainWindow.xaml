@@ -4,7 +4,7 @@
         xmlns:local="clr-namespace:ARK_Server_Manager"
         xmlns:vm="clr-namespace:ARK_Server_Manager.Lib.ViewModel"
         xmlns:eo="http://schemas.essentialobjects.com/wpf/"
-        Title="{DynamicResource MainWindow_Title}" Height="900" Width="1100" Loaded="Window_Loaded"
+        Title="{DynamicResource MainWindow_Title}" Height="850" Width="1100" Loaded="Window_Loaded"
         Name="Main" Icon="Art/favicon.ico">
 	<Window.Resources>
         <ResourceDictionary>
@@ -108,7 +108,7 @@
  
 
         </DockPanel>
-        <eo:TabControl Name="Tabs" Grid.Row ="1" Margin="0,5,0,-5" ShowCloseTabButton="True" ShowNewTabButton="True" NewItemRequested="Servers_AddNew" PreviewItemClose="Servers_Remove" ItemsSource="{Binding ServerManager.Servers}">
+        <eo:TabControl Name="Tabs" Grid.Row ="1" Margin="0,5,0,0" ShowCloseTabButton="True" ShowNewTabButton="True" NewItemRequested="Servers_AddNew" PreviewItemClose="Servers_Remove" ItemsSource="{Binding ServerManager.Servers}">
             <eo:TabControl.HeaderTemplate>
                 <DataTemplate >
                     <TextBlock Text="{Binding Profile.ProfileName}"/>
